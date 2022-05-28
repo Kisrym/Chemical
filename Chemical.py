@@ -249,8 +249,3 @@ class Chemical:
             except ValueError: raise ValueError("Elemento não existente.")
             response['nome'] = e[e.index(id.capitalize())+1]
             return response
-
-
-a = Chemical("2K + Cl2 = KCl")
-
-print(a.balance())
